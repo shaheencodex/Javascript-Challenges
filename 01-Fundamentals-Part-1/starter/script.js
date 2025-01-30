@@ -278,7 +278,7 @@ if (favourite === 23) {
 }
 
 if (favourite !== 23) console.log('why not 23');
-*/
+
 
 // Logical operators
 
@@ -303,4 +303,33 @@ if (hasDriversLicense && hasGoodVision && !istired) {
     console.log('sarah is able to drive');
 } else {
     console.log('someone else should drive...');
+}
+    */
+
+// Switch statement
+
+let day = "wenesday";
+
+switch (day) {
+    case "monday":
+        console.log('start of the week');
+        break;
+    case "friday":
+        console.log('weekend is coming');
+        break;
+    case "sunday":
+        console.log("It's holiday");
+        break;
+    default :
+        console.log("A regular day")
+}
+
+if (day === "monday") {
+    console.log('start of the week');
+} else if (day === "friday") {
+    console.log('weekend is coming');
+} else if (day === "sunday") {
+    console.log("It's holiday");
+} else {
+    console.log("A regular day")
 }
