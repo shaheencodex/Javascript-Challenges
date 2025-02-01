@@ -304,7 +304,7 @@ if (hasDriversLicense && hasGoodVision && !istired) {
 } else {
     console.log('someone else should drive...');
 }
-    */
+    
 
 // Switch statement
 
@@ -333,3 +333,22 @@ if (day === "monday") {
 } else {
     console.log("A regular day")
 }
+    */
+
+// coding challenges 4
+
+const bill = 300;
+
+/* Write your code below. Good luck! 🙂 */
+
+/*let tip;
+if (bill >= 50 && bill <= 300) {
+    tip=(bill*0.15);
+}else {
+    tip=(bill*0.2);
+}*/
+
+const tip=(bill >= 50 && bill <= 300)?(bill*0.15):(bill*0.2);
+
+console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${bill+tip}`);
+
