@@ -46,7 +46,7 @@ const callage2 = function (birthyear) {
 const age2 = callage2(1990);
 console.log(age2);
 
-*/
+
 
 // Arrow function
 const callage2 = birthyear => 2037 - birthyear;
@@ -64,7 +64,7 @@ console.log(yearUntilRetirement(1995, 'shaheen'));
 
 
 // code solution 5
-/* Write your code below. Good luck! 🙂 */
+// Write your code below. Good luck! 🙂 
 
 const calcAverage = (score1,score2,score3) => {
     const averagescore = (score1+score2+score3)/3;
@@ -95,3 +95,66 @@ const calcAverage = (score1,score2,score3) => {
  
  console.log(scoreDolphins,scoreKoalas);
  checkWinner(scoreDolphins,scoreKoalas);
+
+ */
+
+// Array
+ 
+const friend1 = 'Shaheen';
+const friend2 = 'Nasrin';
+const friend3 = 'Juhe';
+
+const friends = ['shaheen', 'Nasrin', 'juhe'];
+console.log(friends);
+
+console.log(friends.length);
+console.log(friends[friends.length - 2]);
+
+
+const calcAge = (birthYear) => {
+    let age = 2025 - birthYear;
+    return age
+}
+
+const year = [2020, 2023, 2018, 2021, 2008]
+
+console.log(calcAge(year[0]));
+console.log(calcAge(year[0]), calcAge(year[1]), calcAge(year[year.length - 1]));
+
+
+//push
+
+friends.push('savi')        // added at the last
+console.log(friends);
+
+//unshift
+friends.unshift('jasmin')   // added at the first
+console.log(friends);
+
+//pop
+friends.pop()    // removed at last
+console.log(friends);
+
+//shift
+friends.shift()
+console.log(friends);
+
+console.log(friends.indexOf('Nasrin'));
+console.log(friends.indexOf('savi'));
+
+console.log(friends.includes('shaheen'));
+console.log(friends.includes('dhivya'));
+
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let combined = arr1.concat(arr2); // [1, 2, 3, 4, 5, 6]
+console.log(combined);
+
+let sliced = combined.slice(2, 5); // [2, 3, 4]
+console.log(sliced)
+
+combined.splice(2, 1, 10); // Replaces 3 with 10 -> [1, 2, 10, 4, 5, 6]
+
+
+
