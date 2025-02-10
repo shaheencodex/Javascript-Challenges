@@ -156,5 +156,118 @@ console.log(sliced)
 
 combined.splice(2, 1, 10); // Replaces 3 with 10 -> [1, 2, 10, 4, 5, 6]
 
+// Object
+
+const nasrinarray = [
+    'Nasrin',
+    'Dubai',
+    'Homemaker',
+    ['shaheen','jasmin','juhe']
+]
+
+console.log(nasrinarray);
+
+const shaheen = {
+    firstName: 'Shaheen',
+    lastName: 'Salma',
+    age: 2025 - 1995,
+    job: 'Front-end Developer',
+    friends:['nasrin','juhe','jasmin','savi']
+}
+
+console.log(shaheen);
+console.log(shaheen.firstName);
+console.log(shaheen['lastName']);
+console.log(shaheen['job']);
+
+//console.log with name key
+
+const nameKey = 'Name';
+
+console.log(shaheen['first' + nameKey]);
+
+const interestedIn = prompt('What you want to know about shaheen? choose between firstName,lastName,age,job,friends');
+console.log(shaheen[interestedIn]);
 
 
+if (shaheen[interestedIn]) {
+    console.log(shaheen[interestedIn]);
+} else {
+    console.log('wrong request ! choose between firstName,lastName,age,job,friends');
+}
+
+shaheen.location = 'Thanjavur';
+shaheen['twitter'] = '@shaheenhaja';
+console.log(shaheen);
+
+console.log(`${shaheen.firstName} has ${friends.length} friends and her best friend name is called ${shaheen.friends[0]}`);
+
+// Object Method
+
+const nasrin = {
+    firstName: 'Nasrin',
+    birthYear: 1995,
+    location: 'Dubai',
+    job: 'Homemaker',
+    hadDrivingLicense: false,
+    friends: ['shaheen', 'jasmin', 'juhe'],
+    
+    // calcAge: function (birthYear) {
+    //    return 2025-birthYear;
+    //   }
+    
+    //calcAge: function () {
+    //    return 2025 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age= 2025 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is ${this.calcAge()} years old ${this.job}, and she has ${this.hadDrivingLicense ? 'a' : 'no'} driving license.`
+    }
+}
+console.log(nasrin.calcAge());
+console.log(nasrin.getSummary());
+
+// challenge 4
+// "Nasrin is 30 years old teacher, and she has a driving license."
+
+
+// coding challenges 7
+
+const mark = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height:1.69,
+    calcBMI: function(){
+        this.bmi= this.mass/(this.height * this.height);
+        return this.bmi;
+    }
+}
+
+const john = {
+    fullName: 'John Smith',
+    mass: 92,
+    height:1.95,
+    calcBMI: function(){
+        this.bmi= this.mass/(this.height * this.height);
+        return this.bmi;
+    }
+}
+
+const MARKBMI = mark.calcBMI();
+const JOHNBMI = john.calcBMI();
+
+console.log(MARKBMI);
+console.log(JOHNBMI);
+
+
+if(MARKBMI >= JOHNBMI ){
+
+console.log(`${mark.fullName}'s BMI ${mark.calcBMI()} is higher than ${john.fullName}'s ${john.calcBMI()}`);
+}else {
+console.log(`${john.fullName}'s BMI ${john.calcBMI()} is higher than ${mark.fullName}'s ${mark.calcBMI()}`);
+}
