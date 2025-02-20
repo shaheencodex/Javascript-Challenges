@@ -96,7 +96,7 @@ const calcAverage = (score1,score2,score3) => {
  console.log(scoreDolphins,scoreKoalas);
  checkWinner(scoreDolphins,scoreKoalas);
 
- */
+ 
 
 // Array
  
@@ -270,4 +270,100 @@ if(MARKBMI >= JOHNBMI ){
 console.log(`${mark.fullName}'s BMI ${mark.calcBMI()} is higher than ${john.fullName}'s ${john.calcBMI()}`);
 }else {
 console.log(`${john.fullName}'s BMI ${john.calcBMI()} is higher than ${mark.fullName}'s ${mark.calcBMI()}`);
+} */
+
+// for loop
+
+/* for (let rep = 0; rep <= 10; rep++){
+    console.log(`Ravi has ${rep} pushup`)
 }
+
+const shaheen = [
+    'Thanjavur',
+    1995,
+    'Front-end Developer',
+    'Married',
+    true
+]
+
+const types = []
+
+for (i = 0; i < shaheen.length; i++){
+    console.log(shaheen[i], typeof shaheen[i]);
+    types[i] = typeof shaheen[i];
+    console.log(types);
+}
+
+const year = [1985, 1989, 1995, 1992, 1998, 2007]
+const age = []
+
+for (let i = 0; i < year.length; i++){
+    age.push(2035 - year[i]);
+}
+
+console.log(age);
+
+// loop continue
+for (i = 0; i < shaheen.length; i++){
+    if (typeof shaheen[i] !== 'string')continue
+        console.log(shaheen[i], typeof shaheen[i]);
+}
+
+// loop break
+for (i = 0; i < shaheen.length; i++){
+    if (typeof shaheen[i] === 'number' )break
+        console.log(shaheen[i], typeof shaheen[i]);
+} */
+
+// backward loop or decrement loop
+        
+        const shaheen = [
+            'Thanjavur',
+            1995,
+            'Front-end Developer',
+            'Married',
+            true
+        ]
+        
+        for (let i = shaheen.length - 1; i >= 0; i--){
+            console.log(i, shaheen[i]);
+}
+        
+// nested loop or loops in loops
+
+for (let exercise = 1; exercise <= 3; exercise++){
+    console.log(`-----Starting exercise ${exercise}`);
+    for (let rep = 1; rep < 5; rep++){
+        console.log(`weight lifting repetition ${rep}`);
+    }
+}
+
+
+for (let i = 1; i <= 5; i++) {  
+    for (let j = 1; j <= 5; j++) {  
+        console.log(`${i} x ${j} = ${i * j}`);  
+    }  
+}
+
+// While loop
+
+let rep = 1;
+while (rep <= 5) {
+    console.log(`lifting weight repetition ${rep}`);
+    rep++;
+}
+
+console.log();
+
+
+let dice = 1;
+
+while (dice !== 6) {
+
+    dice = Math.trunc(Math.random() * 6) + 1;
+    console.log(`you rolled dice ${dice}`);
+    
+    if (dice === 6) console.log('loop is ended');
+
+}
+        

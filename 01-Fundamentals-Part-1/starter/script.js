@@ -352,46 +352,7 @@ const tip=(bill >= 50 && bill <= 300)?(bill*0.15):(bill*0.2);
 
 console.log(`the bill was ${bill}, the tip was ${tip}, and the total value ${bill+tip}`); */
 
-// for loop
 
-for (let rep = 0; rep <= 10; rep++){
-    console.log(`Ravi has ${rep} pushup`)
-}
 
-const shaheen = [
-    'Thanjavur',
-    1995,
-    'Front-end Developer',
-    'Married',
-    true
-]
 
-const types = []
-
-for (i = 0; i < shaheen.length; i++){
-    console.log(shaheen[i], typeof shaheen[i]);
-    types[i] = typeof shaheen[i];
-    console.log(types);
-}
-
-const year = [1985, 1989, 1995, 1992, 1998, 2007]
-const age = []
-
-for (let i = 0; i < year.length; i++){
-    age.push(2035 - year[i]);
-}
-
-console.log(age);
-
-// loop continue
-for (i = 0; i < shaheen.length; i++){
-    if (typeof shaheen[i] !== 'string')continue
-        console.log(shaheen[i], typeof shaheen[i]);
-}
-
-// loop break
-for (i = 0; i < shaheen.length; i++){
-    if (typeof shaheen[i] === 'number' )break
-        console.log(shaheen[i], typeof shaheen[i]);
-}
 
